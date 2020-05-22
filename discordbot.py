@@ -1,5 +1,6 @@
-# インストールした discord.py を読み込む
-import discord
+from discord.ext import commands
+import os
+import traceback
 
 # 自分のBotのアクセストークンに置き換えてください
 TOKEN = os.environ['DISCORD_BOT_TOKEN']
