@@ -16,6 +16,10 @@ async def ping(ctx):
     await ctx.send('pong')
     
 @bot.command()
+async def ping(cat):
+    await ctx.send('にゃ～ん')
+    
+@bot.command()
 async def on_message(message):
     # メッセージ送信者がBotだった場合は無視する
     if message.author.bot:
