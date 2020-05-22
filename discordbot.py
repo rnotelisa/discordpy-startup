@@ -14,11 +14,11 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    
+
 @bot.command()
 async def cat(ctx):
     await ctx.send('にゃ～ん')
-    
+
 @bot.command()
 async def on_message(message):
     # メッセージ送信者がBotだった場合は無視する
@@ -28,5 +28,4 @@ async def on_message(message):
     if message.content == '/neko':
         await message.channel.send('にゃーん')
 
-        
 bot.run(token)
