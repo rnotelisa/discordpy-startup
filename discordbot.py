@@ -16,7 +16,7 @@ async def ping(ctx):
     await ctx.send('pong')
     
 @bot.command()
-async def ping(cat):
+async def cat(ctx):
     await ctx.send('にゃ～ん')
     
 @bot.command()
