@@ -1,5 +1,3 @@
-py -3 -m pip install -U discord.py[voice]
-
 # インストールした discord.py を読み込む
 import discord
 
