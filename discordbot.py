@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def ping(ctx):
-    await message.channel.send('にゃーん')
+    await ctx.send('pong')
 
 @bot.command()
 async def on_message(message):
