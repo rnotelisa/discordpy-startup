@@ -16,12 +16,7 @@ async def ping(ctx):
     await ctx.send('pong')
 
 @bot.command()
-async def on_message(message):
-    # メッセージ送信者がBotだった場合は無視する
-    if message.author.bot:
-        return
-    # 「/neko」と発言したら「にゃーん」が返る処理
-    if message.ping(neko):
-        await message.channel.send('にゃーん')
+async def ping(neko):
+    await ctx.send('にゃ～ん')
         
 bot.run(token)
